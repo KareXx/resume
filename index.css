@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+.container{
+    max-width: 595px;
+    margin: 0 auto;
+}
+.resume{
+    border: 1 solid #000000;
+}
+.resume__header{
+    display: flex;
+    justify-content: space-between;
+	align-items: center;
+    padding: 0 42px;
+	margin: 0 0 20px 0;
+    border-bottom: 1px solid #464A4E;
+	font-family: Montserrat;
+	padding-bottom: 4px;
+	color: #464A4E;
+}
+.resume__header__info_name{
+	font-weight: 700;
+	font-size: 28px;
+	margin: 0 0 10px 0;
+}
+.resume__header__info_age{
+	font-weight: 400;
+	font-size: 21.4px;
+}
+.img{
+    max-width: 120px;
+    max-height: 164px;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+}
+
+.resume__row{
+	display: flex;
+	flex-direction: row;
+	margin: 0 0 0  23px;
+}
+
+.title{
+	color: #464A4E;
+	font-family: Montserrat;
+	font-size: 21.4px;
+	font-weight: 700;
+}
+.resume__leftside{
+	border-right: 1px solid #464A4E;
+	display: flex;
+	flex-direction: column;
+	padding: 0 0 25px 0;
+	margin: 0 0 40px 0;
+}
+.resume__leftside__contact{
+	border-bottom: 1px solid #464A4E;
+	padding: 0 20px 0 5px;
+	margin: 0 23px 20px 0;
+	max-height: 187px;
+	height: 100%
+}
+.resume__leftside__contact__title{
+	margin: 0 0 33px 0;
+}
+.contact__info__row{
+	display: flex;
+	align-items: center;
+	margin: 0 0 20px 0;
+}
+.contact__info__row svg{
+	margin: 0 10px 0 0;
+}
+.contact__info__row p{
+	color: #000;
+	font-family: Lato;
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.resume__rightside__aboutme{
+	margin: 0 0 20px 23px;
+	border-bottom: 1px solid #464A4E;
+	max-height: 187px;
+	height: 100%
+}
+
+.resume__rightside__aboutme__info{
+	margin: 0 0 0 18px;
+}
+.resume__rightside__aboutme__title{
+	margin: 0 0 16px 0;
+}
+.subtitle{
+	color: #464A4E;
+	font-family: Montserrat;
+	font-size: 10px;
+	font-weight: 700;
+	margin: 0 0 8px 0;
+}
+.subtitle::before{
+	content: "";
+	width: 4px;
+	height: 4px;
+	background-color: #000;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 7px 0 0; 
+}
+
+.text{
+	font-family: Montserrat;
+	font-size: 10px;
+	font-weight: 400;
+	margin: 0 0 6px 11px;
+	line-height: 12px;
+}
+
+.resume__leftside__education__info{
+	max-width: 180px;
+	margin: 0 0 20px ;
+	padding: 0 0 15px 8px;
+	border-bottom: 1px solid #464A4E;
+}
+
+.resume__leftside__education__title{
+	margin: 0 0 15px 0;
+}
+
+.resume__leftside__language__title{
+	margin: 0 0 15px 0;
+}
+.resume__rightside__skills{
+	margin: 0 0 0 23px;
+}
+.resume__rightside__skills__info{
+	margin: 0 0 0 18px;
+}
+.resume__rightside__skills__title{
+	margin: 0 0 15px 0;
+}
+
+
+@media(max-width: 440px){
+	.resume__row{
+		flex-direction: column;
+	}
+	.resume__header__info_name{
+		font-size: 20px;
+	}
+	.resume__leftside__education__info{
+		max-width: 100%;
+	}
+	.resume__rightside__aboutme{
+		margin: 0 20px 20px 0;
+		padding: 0 0 15px 0;
+	}
+	.resume__leftside{
+		margin: 0 20px 0 0;
+		border: none;
+	}
+	.resume__leftside__contact{
+		margin: 0 0 20px 0;
+	}
+	.resume__rightside__skills{
+		margin: 0 0 30px 0;
+	}
+	.resume__leftside__language{
+		padding: 0  0 15px 0;
+		border-bottom: 1px solid #464A4E;
+	}
+	.resume__rightside__skills__info{
+		margin: 0 20px 0 18px;
+	}
+}
